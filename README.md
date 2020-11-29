@@ -1,30 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">GitHub User Explore</h1>
+<p>Projeto desenvolvido para ser utilizados como ferramento de consulta rápida aos repositórios e outros detalhes de profissionais da área de Tecnoliga utilizando a API do Github</p>
 
-## Getting Started
+Tabela de Conteúdo
+##################
+<p align="center">
+  <a href="#informacoes">Informações</a>
+  <a href="#features">Features</a>
+  <a href="#telas">Telas</a>
+</p>
 
-First, run the development server:
+<h4>Em desenvolvimento</h4>
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+### Informações
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Você pode visualizar a aplicação através deste [link](https://github-repositoty-client.vercel.app).
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### Features
 
-## Learn More
+- [x] Configurações de `lint` para padronizar a estilização do código.
+- [x] Configurações do `babel` e `next` para utilização de componentes de estilização.
+- [x] Criação de um **Hook** para a utilização do [SWR](https://swr.vercel.app/) como estratégia de performance.
+- [x] Configuração para utilização do [Styled-Components](https://styled-components.com/)
+- [x] Desenvolvimento do componente de busca, utilizando como parâmetro o usuário do Github.
+- [x] Desenvolvimento da tela de detalhes do Usuário.
+- [x] Desenvolvimento da tela de detalhes dos repositórios do usuário.
+- [x] Desenvolvimento da tela dos repositórios favoritos do usuário.
+- [x] Implementação do [`nprogress`](https://ricostacruz.com/nprogress/) como indicador de loading entre as páginas (simulando um ambiente parecido com SPAs).
 
-To learn more about Next.js, take a look at the following resources:
+### Telas
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* Mobile
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<div align="center">
+  <img style="margin: 0 15px !important" src="./github/images/tela-inicial-mobile.jpeg">
+  <img style="margin: 0 15px !important" src="./github/images/tela-detalhes-usuario-mobile.jpeg">
+  <img style="margin: 0 15px !important" src="./github/images/tela-detalhes-repositorios-mobile.jpeg">
+  <img style="margin: 0 15px !important" src="./github/images/tela-detalhes-favoritos-mobile.jpeg">
+</div>
 
-## Deploy on Vercel
+* Desktop
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<div align="center">
+  <img style="margin: 0 15px !important" src="./github/images/tela-inicial-web.png">
+  <img style="margin: 0 15px !important" src="./github/images/tela-detalhes-usuario-web.png">
+  <img style="margin: 0 15px !important" src="./github/images/tela-detalhes-repositorios-web.png">
+  <img style="margin: 0 15px !important" src="./github/images/tela-detalhes-favoritos-web.png">
+</div>
