@@ -2,11 +2,16 @@
 <p>Projeto desenvolvido para ser utilizados como ferramento de consulta rápida aos repositórios e outros detalhes de profissionais da área de Tecnoliga utilizando a API do Github</p>
 
 Tabela de Conteúdo
-##################
+==================
 <p align="center">
   <a href="#informacoes">Informações</a>
   <a href="#features">Features</a>
   <a href="#telas">Telas</a>
+  <a href="#pre-requisitos">Pré Requisitos</a>
+  <a href="#instalacao">Instalação</a>
+  <a href="#como-usar">Como usar</a>
+  <a href="#tecnologia-e-ferramentas">Tecnologias e Ferramentas</a>
+  <a href="#autor">Autor</a>
 </p>
 
 <h4>Em desenvolvimento</h4>
@@ -93,3 +98,28 @@ $ npm install ou yarn
 ### [Como Usar](#como-usar)
 
 Este projeto está utilizando o Framework [NextJS](https://nextjs.org/) que utiliza, por padrão, o **SSR** (Server Side Rendering). Deste modo, para *startar* o projeto, em ambiente de desenvolvimento, deve-se executar o seguinte comando `npm run dev` ou `yarn dev`.
+
+
+### [Tecnologias e Ferramentas](#tecnologia-e-ferramentas)
+
+Este projeto utiliza:
+
+- [React](https://pt-br.reactjs.org/)
+- [NextJS](https://nextjs.org/)
+- [SWR](https://swr.vercel.app/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Styled-Components](https://styled-components.com/)
+
+### Autor
+---
+
+<a href="https://github.com/josephdsbr">
+ <img  src="https://avatars1.githubusercontent.com/u/42288345?s=460&u=3173ac53eabc99366999615e7a2623bcb6b1560f&v=4" width="100px;" alt="" style="border-radius: 50%;"/>
+ <br />
+ <sub><b>José Vinícius Santos de Melo</b></sub></a> <a href="https://github.com/josephdsbr" title="Josephdsbr">🚀</a>
+
+Feito com ❤ por José Vinícius 👋🏽 Entre em contato!
+
+* **Instagram** - [@pajebr](https://www.instagram.com/pajebr/)
+* **Linkedin** -  [josephdsbr](https://www.linkedin.com/in/josephdsbr)
+* **GitHub** - [josephdsbr](https://github.com/josephdsbr)
