@@ -1,8 +1,14 @@
 const theme = {
   colors: {
-    background: '#121214',
-    text: '#e1e1e6',
-    primary: '#8257e6'
+    background: 'rgba(255,255,255,0.85)',
+    text: '#0d0c22',
+    primary: '#404',
+    secondary: '#fff',
+    input: '#0d0c22'
+  },
+  fonts: {
+    borderRadius: '8px',
+    inputPadding: '12px'
   }
 }
 

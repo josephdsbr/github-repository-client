@@ -4,10 +4,10 @@ import Document, {
   DocumentInitialProps,
   Html,
   Main,
-  NextScript
+  NextScript,
+  Head
 } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
-import Head from 'next/head'
 
 export default class MyDocument extends Document {
   static async getInitialProps(
@@ -42,10 +42,7 @@ export default class MyDocument extends Document {
       <Html lang="pt">
         <Head>
           <meta charSet="utf-8" />
-          <link
-            href="https://fonts.googleapi.com/css?family=Roboto:400,500,700"
-            rel="stylesheet"
-          />
+          <title>Github API</title>
         </Head>
         <body>
           <Main />

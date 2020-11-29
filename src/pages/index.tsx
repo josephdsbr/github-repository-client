@@ -1,14 +1,39 @@
-import React from 'react'
-import Header from 'next/head'
+import { useRouter } from 'next/router'
+import React, { useState } from 'react'
+import {
+  Container,
+  GitHubForm,
+  GitHubFormInput,
+  GitHubFormInputButton,
+  GithubFormInputIcon,
+  GithubFormLabel,
+  GitHubFormTitle
+} from '../styles/pages/Home'
 
 const Home: React.FC = () => {
+  const [username, setUsername] = useState<string>(null)
+  const router = useRouter()
+  const handleOnSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault()
+    router.push(`details/${username}`)
+  }
+
   return (
-    <div>
-      <Header>
-        <title>Ola mundo</title>
-      </Header>
-      <h1>Olá Mundo</h1>
-    </div>
+    <Container>
+      <GitHubForm onSubmit={e => handleOnSubmit(e)}>
+        <GitHubFormTitle>Digite um usuário do GitHub</GitHubFormTitle>
+        <GithubFormLabel htmlFor="github-username">
+          <GitHubFormInput
+            name="github-username"
+            onChange={event => setUsername(event.target?.value)}
+            placeholder="Digite um GitHub"
+          />
+          <GitHubFormInputButton type="submit">
+            <GithubFormInputIcon />
+          </GitHubFormInputButton>
+        </GithubFormLabel>
+      </GitHubForm>
+    </Container>
   )
 }
 
