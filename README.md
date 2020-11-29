@@ -46,3 +46,5 @@ Você pode visualizar a aplicação através deste [link](https://github-reposit
   <img style="margin: 0 15px !important" src="./github/images/tela-detalhes-repositorios-web.jpeg" alt="Tela de detalhes dos repositórios web" height="425">
   <img style="margin: 0 15px !important" src="./github/images/tela-detalhes-favoritos-web.jpeg" alt="Tela de detalhes dos repositórios favoritos" height="425">
 </div>
+
+### Tutorial
