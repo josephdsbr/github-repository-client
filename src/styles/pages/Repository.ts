@@ -25,6 +25,13 @@ export const Content = styled.div`
     'user-info user-info'
     'repositories repositories';
   border-radius: ${props => props.theme.fonts.borderRadius};
+
+  @media (max-width: 800px) {
+    padding: 3%;
+    height: 100%;
+    width: 100%;
+    border-radius: unset;
+  }
 `
 
 export const UserInfo = styled.header`

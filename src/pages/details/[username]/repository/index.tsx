@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React from 'react'
-import UserGitHubRepositories from '../../../../components/UserGitHubRepositories'
+import UserGitHubRepositories from '../../../../shared/UserGitHubRepositories'
 import { useFetch } from '../../../../hooks/useFetch'
 import { GitHubRepositoryModel } from '../../../../models/GitHubModel'
 import {
