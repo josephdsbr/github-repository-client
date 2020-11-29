@@ -31,7 +31,7 @@ Você pode visualizar a aplicação através deste [link](https://github-reposit
 
 * Mobile
 
-<div align="center">
+<div align="left">
   <img style="margin: 0 15px !important" src="./github/images/tela-inicial-mobile.jpeg" alt="Tela inicial mobile" height="425">
   <img style="margin: 0 15px !important" src="./github/images/tela-detalhes-usuario-mobile.jpeg" alt="Tela de detalhes do usuário mobile" height="425">
   <img style="margin: 0 15px !important" src="./github/images/tela-detalhes-repositorios-mobile.jpeg" alt="Tela detalhes dos repositórios mobile" height="425">
@@ -40,8 +40,8 @@ Você pode visualizar a aplicação através deste [link](https://github-reposit
 
 * Desktop
 
-<div align="center">
-  <img style="margin: 0 15px !important" src="./github/images/tela-inicial-web.png" alt="Tela inicial web" height="425">
+<div align="left">
+  <img style="margin: 0 15px !important" src="./github/images/tela-inicial-web.PNG" alt="Tela inicial web" height="425">
   <img style="margin: 0 15px !important" src="./github/images/tela-detalhes-usuario-web.png" alt="Tela de detalhes do usuário web" height="425">
   <img style="margin: 0 15px !important" src="./github/images/tela-detalhes-repositorios-web.png" alt="Tela de detalhes dos repositórios web" height="425">
   <img style="margin: 0 15px !important" src="./github/images/tela-detalhes-favoritos-web.png" alt="Tela de detalhes dos repositórios favoritos" height="425">
