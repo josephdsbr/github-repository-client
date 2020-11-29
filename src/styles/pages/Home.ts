@@ -1,6 +1,11 @@
 import styled from 'styled-components'
 import SearchIcon from '@material-ui/icons/Search'
 import { lighten } from 'polished'
+
+interface InputProps {
+  error: boolean
+}
+
 export const Container = styled.main`
   height: 100%;
   width: 100%;
@@ -37,7 +42,7 @@ export const GitHubFormTitle = styled.h1`
     font-size: 2rem;
   }
 `
-export const GithubFormLabel = styled.label`
+export const GithubFormLabel = styled.label<InputProps>`
   display: grid;
   grid-template-columns: minmax(85%, 90%) minmax(10%, 15%);
   grid-template-areas: 'input icon';
@@ -45,6 +50,7 @@ export const GithubFormLabel = styled.label`
   background: #ffffff;
   border-radius: ${props => props.theme.fonts.borderRadius};
   padding: 0 0 0 ${props => props.theme.fonts.inputPadding};
+  border: 1px solid ${props => (props.error ? 'red' : 'transparent')};
 
   @media (max-width: 800px) {
     grid-template-columns: minmax(80%, 85%) minmax(15%, 20%);

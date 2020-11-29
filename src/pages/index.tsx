@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router'
+import { useForm } from 'react-hook-form'
 import React, { useState } from 'react'
 import {
   Container,
@@ -11,22 +12,23 @@ import {
 } from '../styles/pages/Home'
 
 const Home: React.FC = () => {
-  const [username, setUsername] = useState<string>(null)
+  const { register, handleSubmit, errors } = useForm()
+
   const router = useRouter()
-  const handleOnSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault()
+
+  const onSubmit = ({ username }) => {
     router.push(`details/${username}`)
   }
 
   return (
     <Container>
-      <GitHubForm onSubmit={e => handleOnSubmit(e)}>
+      <GitHubForm onSubmit={handleSubmit(onSubmit)}>
         <GitHubFormTitle>Digite um usuário do GitHub</GitHubFormTitle>
-        <GithubFormLabel htmlFor="github-username">
+        <GithubFormLabel error={errors.username} htmlFor="username">
           <GitHubFormInput
+            ref={register({ required: true })}
             type="text"
-            name="github-username"
-            onChange={event => setUsername(event.target?.value)}
+            name="username"
             placeholder="Digite um GitHub"
           />
           <GitHubFormInputButton type="submit">
