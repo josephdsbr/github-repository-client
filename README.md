@@ -41,8 +41,8 @@ Você pode visualizar a aplicação através deste [link](https://github-reposit
 * Desktop
 
 <div align="left">
-  <img style="margin: 0 15px !important" src="./github/images/tela-inicial-web.PNG" alt="Tela inicial web" height="425">
-  <img style="margin: 0 15px !important" src="./github/images/tela-detalhes-usuario-web.PNG" alt="Tela de detalhes do usuário web" height="425">
-  <img style="margin: 0 15px !important" src="./github/images/tela-detalhes-repositorios-web.PNG" alt="Tela de detalhes dos repositórios web" height="425">
-  <img style="margin: 0 15px !important" src="./github/images/tela-detalhes-favoritos-web.PNG" alt="Tela de detalhes dos repositórios favoritos" height="425">
+  <img style="margin: 0 15px !important" src="./github/images/tela-inicial-web.jpeg" alt="Tela inicial web" height="425">
+  <img style="margin: 0 15px !important" src="./github/images/tela-detalhes-usuario-web.jpeg" alt="Tela de detalhes do usuário web" height="425">
+  <img style="margin: 0 15px !important" src="./github/images/tela-detalhes-repositorios-web.jpeg" alt="Tela de detalhes dos repositórios web" height="425">
+  <img style="margin: 0 15px !important" src="./github/images/tela-detalhes-favoritos-web.jpeg" alt="Tela de detalhes dos repositórios favoritos" height="425">
 </div>
