@@ -42,6 +42,11 @@ export default class MyDocument extends Document {
       <Html lang="pt">
         <Head>
           <meta charSet="utf-8" />
+          <meta
+            name="description"
+            content="Melhor aplicativo e site para consultar informações dos Desenvolvedores no Github."
+          />
+          <link rel="stylesheet" type="text/css" href="/nprogress.css" />
           <title>Github API</title>
         </Head>
         <body>

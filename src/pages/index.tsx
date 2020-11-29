@@ -24,6 +24,7 @@ const Home: React.FC = () => {
         <GitHubFormTitle>Digite um usuário do GitHub</GitHubFormTitle>
         <GithubFormLabel htmlFor="github-username">
           <GitHubFormInput
+            type="text"
             name="github-username"
             onChange={event => setUsername(event.target?.value)}
             placeholder="Digite um GitHub"
