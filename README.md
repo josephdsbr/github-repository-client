@@ -37,24 +37,16 @@ Você pode visualizar a aplicação através deste [link](https://github-reposit
 #### Mobile
 
 <div align="left">
-<div>
-  <h3 style="margin-bottom: 15px">Tela Inicial</h3>
-  <img style="margin: 0 15px !important" src="./github/images/tela-inicial-mobile.jpeg" alt="Tela inicial mobile" height="425">
+  <div>
+    <p style="margin-bottom: 15px">Tela Inicial</h3>
+    <img style="margin: 0 15px !important" src="./github/images/tela-inicial-mobile.jpeg" alt="Tela inicial mobile" height="425">
+  </div>
+  <div>
+    <p style="margin-bottom: 15px">Tela de detalhes do usuário</h3>
+    <img style="margin: 0 15px !important" src="./github/images/tela-detalhes-usuario-mobile.jpeg" alt="Tela de detalhes do usuário mobile" height="425">
+  </div>
 </div>
 
-
-* Tela de detalhes do usuário
-
-<img style="margin: 0 15px !important" src="./github/images/tela-detalhes-usuario-mobile.jpeg" alt="Tela de detalhes do usuário mobile" height="425">
-
-* Tela de detalhes dos repositórios
-
-<img style="margin: 0 15px !important" src="./github/images/tela-detalhes-repositorios-mobile.jpeg" alt="Tela detalhes dos repositórios mobile" height="425">
-
-* Tela de detalhes dos repositórios favoritos
-
-<img style="margin: 0 15px !important" src="./github/images/tela-detalhes-favoritos-mobile.jpeg" alt="Tela detalhes favoritos mobile" height="425">
-</div>
 #### Desktop
 
 * Tela Inicial
