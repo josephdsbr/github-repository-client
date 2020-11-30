@@ -44,5 +44,11 @@ export const RepositoryOwnerAvatar = styled.img`
   max-width: 80%;
   border-radius: 50%;
   justify-self: center;
-  aspect-ratio: attr(width) / attr(height);
+  aspect-ratio: 16 / 9;
+
+  @media (max-width: 800px) {
+    height: auto;
+    width: 100%;
+    aspect-ratio: 1/1;
+  }
 `
