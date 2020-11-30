@@ -1,12 +1,13 @@
 const theme = {
   colors: {
-    background: 'rgba(255,255,255,0.85)',
+    background: '#131B23',
     text: '#0d0c22',
-    primary: '#404',
+    primary: '#2B7F6E',
     secondary: '#fff',
     input: '#0d0c22',
-    scroll: '#404',
-    scrollBackground: '#fff'
+    scroll: '#2B7F6E',
+    scrollBackground: '#fff',
+    title: '#2B7F6E'
   },
   fonts: {
     borderRadius: '8px',

@@ -33,10 +33,7 @@ export const GitHubForm = styled.form`
 `
 export const GitHubFormTitle = styled.h1`
   font-size: 3.5rem;
-  color: ${props => props.theme.colors.secondary};
-  @supports (color: hsl(0, 0%, 100%)) {
-    color: hsl(0, 0%, 100%);
-  }
+  color: ${props => props.theme.colors.title};
   text-align: center;
   @media (max-width: 800px) {
     font-size: 2rem;
