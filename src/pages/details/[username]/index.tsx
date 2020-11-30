@@ -34,7 +34,7 @@ const DetailsUser: React.FC<IProps> = ({ user: data }) => {
         <UserBio>{data?.bio}</UserBio>
         <ActionsContainer>
           <Link href={`/details/${data?.login}/repository`}>
-            <RepositoryLink>Repositóries</RepositoryLink>
+            <RepositoryLink>Repositórios</RepositoryLink>
           </Link>
           <Link href={`/details/${data?.login}/favority`}>
             <StarredLink>Favoritos</StarredLink>
