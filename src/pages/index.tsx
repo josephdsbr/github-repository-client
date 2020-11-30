@@ -38,7 +38,10 @@ const Home: NextPage<Props> = ({ user }) => {
             id="username"
             placeholder="Digite um GitHub"
           />
-          <GitHubFormInputButton type="submit">
+          <GitHubFormInputButton
+            aria-label="Encontre um usuário do Github"
+            type="submit"
+          >
             <GithubFormInputIcon />
           </GitHubFormInputButton>
         </GithubFormLabel>
