@@ -6,6 +6,7 @@ Tabela de Conteúdo
 <p align="center">
   <a href="#informacoes">Informações</a>
   <a href="#features">Features</a>
+  <a href="#melhorias">Melhorias</a>
   <a href="#telas">Telas</a>
   <a href="#pre-requisitos">Pré Requisitos</a>
   <a href="#instalacao">Instalação</a>
@@ -31,6 +32,10 @@ Você pode visualizar a aplicação através deste [link](https://github-reposit
 - [x] Desenvolvimento da tela de detalhes dos repositórios do usuário.
 - [x] Desenvolvimento da tela dos repositórios favoritos do usuário.
 - [x] Implementação do [`nprogress`](https://ricostacruz.com/nprogress/) como indicador de loading entre as páginas (simulando um ambiente parecido com SPAs).
+
+### Melhorias
+
+- [ ] Implementação de melhor gerenciamento de cache de arquivos estáticos no servidor.
 
 ### Telas
 
