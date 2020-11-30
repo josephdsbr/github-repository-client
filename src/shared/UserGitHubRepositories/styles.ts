@@ -10,8 +10,8 @@ export const Container = styled.section`
   grid-column-gap: 2%;
   grid-template-rows: 30% 65%;
   grid-row-gap: 5%;
-  color: inherit;
-  text-decoration: unset;
+  color: ${props => props.theme.colors.primary};
+  text-decoration: none;
   grid-template-areas:
     'title avatar'
     'description avatar';
@@ -38,8 +38,11 @@ export const RepositoryDescription = styled.p`
 
 export const RepositoryOwnerAvatar = styled.img`
   grid-area: avatar;
+  height: 100%;
+  width: auto;
   max-height: 80%;
   max-width: 80%;
   border-radius: 50%;
   justify-self: center;
+  aspect-ratio: attr(width) / attr(height);
 `

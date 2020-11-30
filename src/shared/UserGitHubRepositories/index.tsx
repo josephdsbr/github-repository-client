@@ -19,6 +19,8 @@ const UserGitHubRepositories: React.FC<IProps> = ({ repository }) => {
         <RepositoryTitle>{repository.name}</RepositoryTitle>
         <RepositoryDescription>{repository.description}</RepositoryDescription>
         <RepositoryOwnerAvatar
+          height="360"
+          width="640"
           src={repository.owner.avatar_url}
           alt={repository.name}
         />
