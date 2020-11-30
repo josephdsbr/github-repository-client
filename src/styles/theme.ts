@@ -4,7 +4,9 @@ const theme = {
     text: '#0d0c22',
     primary: '#404',
     secondary: '#fff',
-    input: '#0d0c22'
+    input: '#0d0c22',
+    scroll: '#404',
+    scrollBackground: '#fff'
   },
   fonts: {
     borderRadius: '8px',
