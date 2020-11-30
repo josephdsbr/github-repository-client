@@ -35,6 +35,7 @@ const Home: NextPage<Props> = ({ user }) => {
             ref={register({ required: true })}
             type="text"
             name="username"
+            id="username"
             placeholder="Digite um GitHub"
           />
           <GitHubFormInputButton type="submit">
