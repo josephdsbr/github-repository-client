@@ -14,7 +14,7 @@ interface IProps {
 
 const UserGitHubRepositories: React.FC<IProps> = ({ repository }) => {
   return (
-    <Link href={repository.html_url} target="_blank">
+    <Link href={repository.html_url} target="_blank" rel="noreferrer">
       <Container>
         <RepositoryTitle>{repository.name}</RepositoryTitle>
         <RepositoryDescription>{repository.description}</RepositoryDescription>
