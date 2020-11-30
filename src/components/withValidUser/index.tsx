@@ -1,5 +1,5 @@
 import React from 'react'
-import { Router, useRouter, withRouter } from 'next/router'
+import { useRouter } from 'next/router'
 import { useFetch } from '../../hooks/useFetch'
 import { NextPage } from 'next'
 import { GitHubResponseModel } from '../../models/GitHubModel'
@@ -24,7 +24,7 @@ const WithValidUser = <P extends Object>(Component: React.FC<P>) => {
       if (typeof window !== 'undefined') {
         router.push('/')
       }
-      return <h1>Loading</h1>
+      return <Loading />
     }
 
     return <Component user={data} {...props} />

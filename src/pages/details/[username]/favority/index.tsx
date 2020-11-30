@@ -11,6 +11,7 @@ import {
   FavorityTitle,
   GoBackIcon
 } from '../../../../styles/pages/Favority'
+import WithValidUser from '../../../../components/withValidUser'
 
 const DetailsFavority: React.FC = () => {
   const router = useRouter()
@@ -35,4 +36,4 @@ const DetailsFavority: React.FC = () => {
   )
 }
 
-export default DetailsFavority
+export default WithValidUser(DetailsFavority)

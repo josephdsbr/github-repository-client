@@ -1,8 +1,6 @@
 import Link from 'next/link'
-import { useRouter } from 'next/router'
 import React from 'react'
 import WithValidUser from '../../../components/withValidUser'
-import { useFetch } from '../../../hooks/useFetch'
 import { GitHubResponseModel } from '../../../models/GitHubModel'
 import Loading from '../../../shared/Loading'
 import {
