@@ -4,6 +4,7 @@ import { useFetch } from '../../hooks/useFetch'
 import { NextPage } from 'next'
 import { GitHubResponseModel } from '../../models/GitHubModel'
 import Loading from '../../shared/Loading'
+import { useSnackbar } from 'nextjs-toast'
 
 /**
  * Check if a user exists
@@ -13,6 +14,7 @@ import Loading from '../../shared/Loading'
 
 const WithValidUser = <P extends Object>(Component: React.FC<P>) => {
   const hocComponent: NextPage<P> = ({ ...props }) => {
+    const snackbar = useSnackbar()
     const router = useRouter()
     const { username } = router.query
 
@@ -23,6 +25,7 @@ const WithValidUser = <P extends Object>(Component: React.FC<P>) => {
     if (data?.message === 'Not Found') {
       if (typeof window !== 'undefined') {
         router.push('/')
+        snackbar.showMessage('User not found', 'error', 'filled')
       }
       return <Loading />
     }

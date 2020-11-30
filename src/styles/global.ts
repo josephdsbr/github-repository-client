@@ -46,4 +46,7 @@ export default createGlobalStyle`
     max-height: 100%;
     overflow: hidden;
   }
+
+  .MuiSnackbar-root {
+  }
 `
