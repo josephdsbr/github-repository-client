@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Container = styled.a`
+export const Container = styled.section`
   height: 100%;
   width: 100%;
   cursor: pointer;

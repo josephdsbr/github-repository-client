@@ -1,6 +1,6 @@
+import { Link } from '@material-ui/core'
 import React from 'react'
 import { GitHubRepositoryModel } from '../../models/GitHubModel'
-import WrappedComponent from '../../components/withValidUser'
 import {
   Container,
   RepositoryDescription,
@@ -14,14 +14,16 @@ interface IProps {
 
 const UserGitHubRepositories: React.FC<IProps> = ({ repository }) => {
   return (
-    <Container href={repository.html_url} target="_blank">
-      <RepositoryTitle>{repository.name}</RepositoryTitle>
-      <RepositoryDescription>{repository.description}</RepositoryDescription>
-      <RepositoryOwnerAvatar
-        src={repository.owner.avatar_url}
-        alt={repository.name}
-      />
-    </Container>
+    <Link href={repository.html_url} target="_blank">
+      <Container>
+        <RepositoryTitle>{repository.name}</RepositoryTitle>
+        <RepositoryDescription>{repository.description}</RepositoryDescription>
+        <RepositoryOwnerAvatar
+          src={repository.owner.avatar_url}
+          alt={repository.name}
+        />
+      </Container>
+    </Link>
   )
 }
 
