@@ -40,8 +40,6 @@ export const RepositoryOwnerAvatar = styled.img`
   grid-area: avatar;
   max-height: 80%;
   max-width: 80%;
-  width: inherit;
-  height: inherit;
   border-radius: 50%;
   justify-self: center;
 `

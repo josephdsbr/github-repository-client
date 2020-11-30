@@ -6,6 +6,7 @@ export interface GitHubResponseModel {
   followers: number
   following: number
   login: string
+  message: string
 }
 
 export interface GitHubRepositoryModel {

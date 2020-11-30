@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 import { useForm } from 'react-hook-form'
-import React, { useState } from 'react'
+import React from 'react'
 import {
   Container,
   GitHubForm,
@@ -10,10 +10,16 @@ import {
   GithubFormLabel,
   GitHubFormTitle
 } from '../styles/pages/Home'
+import WithValidUser from '../components/withValidUser'
+import { NextPage } from 'next'
+import Loading from '../shared/Loading'
 
-const Home: React.FC = () => {
+interface Props {
+  user: any
+}
+
+const Home: NextPage<Props> = ({ user }) => {
   const { register, handleSubmit, errors } = useForm()
-
   const router = useRouter()
 
   const onSubmit = ({ username }) => {

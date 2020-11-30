@@ -1,5 +1,6 @@
 import React from 'react'
 import { GitHubRepositoryModel } from '../../models/GitHubModel'
+import WrappedComponent from '../../components/withValidUser'
 import {
   Container,
   RepositoryDescription,

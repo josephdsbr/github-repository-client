@@ -1,9 +1,11 @@
 import Link from 'next/link'
-import { useRouter } from 'next/router'
 import React from 'react'
 import UserGitHubRepositories from '../../../../shared/UserGitHubRepositories'
 import { useFetch } from '../../../../hooks/useFetch'
-import { GitHubRepositoryModel } from '../../../../models/GitHubModel'
+import {
+  GitHubRepositoryModel,
+  GitHubResponseModel
+} from '../../../../models/GitHubModel'
 import {
   Container,
   Content,
@@ -12,23 +14,33 @@ import {
   GoBackIcon,
   UserName
 } from '../../../../styles/pages/Repository'
-const DetailsRepository: React.FC = () => {
-  const router = useRouter()
-  const { username } = router.query
-  const { data } = useFetch<GitHubRepositoryModel[]>(
-    `https://api.github.com/users/${username}/repos`
+import WithValidUser from '../../../../components/withValidUser'
+import Loading from '../../../../shared/Loading'
+
+interface IProps {
+  user: GitHubResponseModel
+}
+
+const DetailsRepository: React.FC<IProps> = ({ user: data }) => {
+  if (!data) {
+    return <Loading />
+  }
+
+  const { data: repositories } = useFetch<GitHubRepositoryModel[]>(
+    `https://api.github.com/users/${data?.login}/repos`
   )
+
   return (
     <Container>
       <Content>
-        <Link href={`/details/${username}`}>
+        <Link href={`/details/${data?.login}`}>
           <GoBackIcon />
         </Link>
         <UserInfo>
           <UserName>Repositórios</UserName>
         </UserInfo>
         <UserRepositories>
-          {data?.map(repository => (
+          {repositories?.map(repository => (
             <UserGitHubRepositories
               key={repository.id}
               repository={repository}
@@ -40,4 +52,4 @@ const DetailsRepository: React.FC = () => {
   )
 }
 
-export default DetailsRepository
+export default WithValidUser(DetailsRepository)

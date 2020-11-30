@@ -1,11 +1,10 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React from 'react'
+import WithValidUser from '../../../components/withValidUser'
 import { useFetch } from '../../../hooks/useFetch'
-import {
-  GitHubRepositoryModel,
-  GitHubResponseModel
-} from '../../../models/GitHubModel'
+import { GitHubResponseModel } from '../../../models/GitHubModel'
+import Loading from '../../../shared/Loading'
 import {
   ActionsContainer,
   Container,
@@ -19,19 +18,13 @@ import {
 } from '../../../styles/pages/Details'
 
 interface IProps {
-  username: string
-  img: string
-  name: string
-  bio: string
+  user: GitHubResponseModel
 }
 
-const DetailsUser: React.FC<IProps> = () => {
-  const router = useRouter()
-  const { username } = router.query
-  const { data } = useFetch<GitHubResponseModel>(
-    `https://api.github.com/users/${username}`
-  )
-
+const DetailsUser: React.FC<IProps> = ({ user: data }) => {
+  if (!data) {
+    return <Loading />
+  }
   return (
     <Container>
       <Content>
@@ -42,10 +35,10 @@ const DetailsUser: React.FC<IProps> = () => {
         <UserName>{data?.name}</UserName>
         <UserBio>{data?.bio}</UserBio>
         <ActionsContainer>
-          <Link href={`/details/${username}/repository`}>
-            <RepositoryLink>Repositórios</RepositoryLink>
+          <Link href={`/details/${data?.login}/repository`}>
+            <RepositoryLink>Repositóries</RepositoryLink>
           </Link>
-          <Link href={`/details/${username}/favority`}>
+          <Link href={`/details/${data?.login}/favority`}>
             <StarredLink>Favoritos</StarredLink>
           </Link>
         </ActionsContainer>
@@ -54,4 +47,4 @@ const DetailsUser: React.FC<IProps> = () => {
   )
 }
 
-export default DetailsUser
+export default WithValidUser(DetailsUser)
